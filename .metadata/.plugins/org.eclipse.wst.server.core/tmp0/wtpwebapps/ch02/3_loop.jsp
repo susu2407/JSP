@@ -1,0 +1,77 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>반복문</title>
+		<%-- 
+			날짜 : 2025/07/28
+			이름 : 이수연
+			내용 : 1장 JSP 스크립트 반복문 실습
+		--%> 
+	</head>
+	<body>
+		<h3>반복문</h3>
+		
+		<h4>for</h4>
+		<%
+			for(int i=1 ; i<=5 ; i++) {
+				out.println("<p>i : " + i + "</p>");
+			}
+		%>
+		
+		<% for(int j=1 ; j<=5 ; j++) { %>
+			<p>j : <%= j %></p>
+		<% } %>		
+		
+		<h4>while</h4>
+		<%
+			int k = 1;
+			while(k <= 10) {
+		%>
+			<p>k : <%= k %></p>
+		<%
+				k++;
+			}
+		%>
+		
+		<h4>구구단</h4>
+		
+		<h5>구구단_노가다</h5>		
+		<table border="1">
+			<tr>
+				<td>2 x 1 = 2</td>
+				<td>3 x 1 = 3</td>
+				<td>4 x 1 = 4</td>
+				<td>5 x 1 = 5</td>
+				<td>6 x 1 = 6</td>
+				<td>7 x 1 = 7</td>
+				<td>8 x 1 = 8</td>
+				<td>9 x 1 = 9</td>
+			
+			</tr>
+			<tr>
+				<td>2 x 2 = 4</td>
+				<td>3 x 2 = 6</td>
+				<td>4 x 2 = 6</td>
+				<td>5 x 2 = 10</td>
+				<td>6 x 2 = 12</td>
+				<td>7 x 2 = 14</td>
+				<td>8 x 2 = 16</td>
+				<td>9 x 2 = 18</td>
+			
+			</tr>
+		</table>
+		<h5>구구단_for문 이용</h5>		
+		<table border="1">
+			<% for(int x=1 ; x<=9 ; x++) { %>
+			<tr>
+				<% for(int y=1 ; y<=9 ; y++) { %>
+				<td><%= y %> x <%= x %> = <%= y * x %></td>
+				<% } %>
+			</tr>
+			<% } %>
+		</table>
+	
+	</body>
+</html>

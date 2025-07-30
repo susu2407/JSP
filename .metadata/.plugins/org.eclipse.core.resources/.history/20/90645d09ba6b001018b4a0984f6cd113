@@ -1,0 +1,27 @@
+package ch01;
+
+public class Account {
+	private String id;
+	private String name;
+	private int balance;
+	
+	public Account(String id, String name, int balance) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.balance = balance;
+	}
+	
+	public void deposit(int money) {
+		this.balance += money;
+	}
+	
+	public void withdraw(int money) {
+		this.balance -= money;
+	}
+	
+	pubic void show() {
+		System.out.println();
+	}
+
+}
