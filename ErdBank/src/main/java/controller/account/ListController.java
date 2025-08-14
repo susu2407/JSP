@@ -25,9 +25,9 @@ public class ListController extends HttpServlet {
 		
 		System.out.println(dtoList);
 		
-		req.setAttribute("accoutns", dtoList);
+		req.setAttribute("accoutn", dtoList);
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/account/list.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/account/list.jsp");
 		dispatcher.forward(req, resp);
 	}
 	
