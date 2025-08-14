@@ -18,9 +18,9 @@ public class DBHelper {
 	protected Statement stmt = null;
 	protected ResultSet rs = null;
 	
-	public Connection getConnection(String dbcp) throws NamingException, SQLException {		
+	public Connection getConnection(String DBCP) throws NamingException, SQLException {		
 		Context ctx = (Context) new InitialContext().lookup("java:comp/env");
-		DataSource ds = (DataSource) ctx.lookup(dbcp);		
+		DataSource ds = (DataSource) ctx.lookup(DBCP);		
 		return ds.getConnection();		
 	}
 	
