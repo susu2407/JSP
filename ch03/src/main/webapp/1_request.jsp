@@ -7,7 +7,7 @@
 		<%--
 			날짜 : 2025/07/28
 			이름 : 이수연
-			내용 : JSP 내장객체 requesr 실습하기
+			내용 : JSP 내장객체 request 실습하기
 			
 			request 내장객체
 			 - 클라이언트의 요청 정보를 갖는 JSP 내장객체
@@ -29,21 +29,16 @@
 		<h3>JSP 내장객체 - request</h3>
 		
 		<h4>GET 요청</h4>
+		<a href="./proc/result1.jsp?uid=a101">요청1</a>
+		<a href="./proc/result1.jsp?uid=a102&name=홍길동">요청2</a>
+		<a href="./proc/result1.jsp?uid=a103&name=김유신&age=23">요청3</a>
 		
 		<h4>POST 요청</h4>
-		
-		<h4>확인문제</h4>
-		
-		<form action="">
-			
-			<table brother = "1">
+		<form action="./proc/result2.jsp" method="post">
+			<table border="1">
 				<tr>
 					<td>아이디</td>
-					<td><input type="text" name ="id" placeholder="아이디 일력"/></td>
-				</tr>
-				<tr>
-					<td>비밀번호</td>
-					<td><input type="password" name ="pw" placeholder="비빌번호 일력"/></td>
+					<td><input type="text" name ="uid" placeholder="아이디 일력"/></td>
 				</tr>
 				<tr>
 					<td>이름</td>
@@ -51,7 +46,7 @@
 				</tr>
 				<tr>
 					<td>생년월일</td>
-					<td><input type="date" name ="id" placeholder="birth"/></td>
+					<td><input type="date" name ="birth" placeholder="birth"/></td>
 				</tr>
 				<tr>
 					<td>성별</td>
@@ -59,9 +54,16 @@
 						<label><input type="radio" name ="gender" placeholder="남자"/>남자</label>
 						<label><input type="radio" name ="gender" placeholder="여자"/>여자</label>
 					</td>
-				</tr>	
+				</tr>
+				<tr>
+					<td colspan="2" align="right">
+						<input type="submit" value="전송하기"/>
+					</td>
+				</tr>
 			</table>
 		</form>
-	
+		
+		<h4>확인문제</h4>
+		
 	</body>
 </html>
