@@ -15,7 +15,7 @@
 		<title>결과 페이지2</title>
 	</head>
 	<body>
-		<h3>요청결과(전송 데이터 수신)</h3>
+		<h3>POST 요청결과(전송 데이터 수신)</h3>
 		
 		<p>
 			쿼리스트링 : <%= queryString %><br>

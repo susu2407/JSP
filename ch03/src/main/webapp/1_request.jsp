@@ -21,8 +21,6 @@
 			 - 데이터를 요청객체의 body에 저장해서 전송되는 방식	
 			 (이게 무슨 말이냐면,...)
 			 - 보안에 유리하고 대량의 데이터 전송에 사용 적합
-			 
-			
 		 --%>
 	</head>
 	<body>
@@ -64,6 +62,53 @@
 		</form>
 		
 		<h4>확인문제</h4>
+		<form action="./proc/result3.jsp" method="post">
+		
+			<table border="1">
+				<tr>
+					<td>아이디</td>
+					<td><input type="text" name="id" placeholder="아이디 입력"/></td>		
+				</tr>
+				<tr>
+					<td>비밀번호</td>
+					<td><input type="password" name="pw" placeholder="비밀번호 입력"/></td>		
+				</tr>
+				<tr>
+					<td>이름</td>
+					<td><input type="text" name="name" placeholder="이름 입력"/></td>		
+				</tr>
+				<tr>
+					<td>생년월일</td>
+					<td><input type="date" name="birth"/></td>		
+				</tr>
+				<tr>
+					<td>성별</td>
+					<td>
+						<input type="radio" name="gender" value="M"/>남성
+						<label><input type="radio" name="gender" value="F"/>여성</label>
+						<!-- label : 체크박스/라디오 같은 작은 입력 UI를 더 크게 클릭할 수 있도록 묶어주는 태그 -->
+					</td>
+				</tr>
+				<tr>
+					<td>주소</td>
+					<td>
+						<select name="address">
+							<option>서울</option>
+							<option>대전</option>
+							<option>대구</option>
+							<option>부산</option>
+							<option>광주</option>
+						</select>
+					</td>	
+				</tr>
+				<tr>
+					<td colspan="2" align="right">
+						<input type="submit" value="전송하기"/>
+					</td>				
+				</tr>
+			</table>
+		
+		</form>
 		
 	</body>
 </html>
