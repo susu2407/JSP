@@ -13,7 +13,9 @@
 	<body>
 		<h3>JSP 내장객체 - response</h3>
 		
-		<a href="">리</a>
+		<a href="./proc/redirect1.jsp">리다이렉트 페이지 요청1</a><br/>
+		<a href="./proc/redirect2.jsp">리다이렉트 페이지 요청2</a><br/>
+		<a href="./proc/responseFile.jsp">파일 다운로드 요청</a>
 	
 	</body>
 </html>
