@@ -4,13 +4,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>forward1</title>
+		<title>forward2</title>
 	</head>
 	<body>
-		<h3>forward1 페이지</h3>
+		<h3>forward2 페이지</h3>
 		<%
 			// 서버 내에서 페이지 처리 이동
-			pageContext.forward("../1_request.jsp");
+			pageContext.forward("https://naver.com");
 		%>
 	</body>
 </html>
