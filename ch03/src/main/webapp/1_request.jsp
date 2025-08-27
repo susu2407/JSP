@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>JSP 내장객체 - request</title>
 		<%--
 			날짜 : 2025/07/28
 			이름 : 이수연
@@ -102,13 +102,35 @@
 					</td>	
 				</tr>
 				<tr>
+					<td>취미</td>
+					<td>
+						<label><input type="checkbox" name="hobby" value="등산"/>등산</label>
+						<label><input type="checkbox" name="hobby" value="운동"/>운동</label>
+						<label><input type="checkbox" name="hobby" value="여행"/>여행</label>
+						<label><input type="checkbox" name="hobby" value="독서"/>독서</label>
+						<label><input type="checkbox" name="hobby" value="게임"/>게임</label>
+				</tr>
+				<tr>
 					<td colspan="2" align="right">
 						<input type="submit" value="전송하기"/>
 					</td>				
 				</tr>
-			</table>
-		
+			</table>		
 		</form>
+		
+		
+		<h4>request 자주 사용하는 클라이언트 정보</h4>
+		<p>
+			헤더 정보 #1 : <%= request.getHeader("User-Agent") %><br/>
+			헤더 정보 #2 : <%= request.getHeader("referer") %><br/>
+			헤더 정보 #3 : <%= request.getHeader("cookie") %><br/>
+			프로토콜 : <%= request.getProtocol() %><br/>
+			서버이름 : <%= request.getServerName() %><br/>
+			서버포트 : <%= request.getServerPort() %><br/>
+			요청주소 : <%= request.getRequestURL() %><br/>
+			요청경로 : <%= request.getRequestURI() %><br/>
+			IP 주소 : <%= request.getRemoteAddr() %><br/>
+		</p>
 		
 	</body>
 </html>

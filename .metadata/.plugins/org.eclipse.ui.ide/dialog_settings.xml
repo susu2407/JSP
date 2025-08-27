@@ -22,6 +22,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\tndus\Desktop\workspace\Jsp"/>
 			<item value="C:\Users\GGG\Desktop\workspace\JSP\ch09"/>
 			<item value="C:\Users\GGG\Desktop\workspace\JSP\ch10"/>
 			<item value="C:\Users\GGG\Desktop\workspace\JSP\ch05"/>
@@ -33,7 +34,7 @@
 			<item value=""/>
 		</list>
 		<section name="ExternalProjectImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="257"/>
+			<item key="DIALOG_X_ORIGIN" value="369"/>
 			<item key="DIALOG_Y_ORIGIN" value="185"/>
 			<item key="DIALOG_WIDTH" value="525"/>
 			<item key="DIALOG_HEIGHT" value="710"/>

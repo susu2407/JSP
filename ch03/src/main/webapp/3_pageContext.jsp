@@ -18,6 +18,13 @@
 	<body>
 		<h3>JSP 내장객체 - pageContext</h3>
 		
+		<h4>forward</h4>
+		<a  href="./proc/forward1.jsp">포워드 피이지 요청1</a><br/>
+		<a  href="./proc/forward2.jsp">포워드 피이지 요청2</a><br/>
+		
+		<h4>include</h4>
+		
+		
 	
 	</body>
 </html>
