@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Move &apos;3_Loop.jsp&apos; to &apos;webapp&apos;" description="Move &apos;3_Loop.jsp&apos; to &apos;webapp&apos;" destination="src/main/webapp" element1="src/main/webapp/WEB-INF/3_Loop.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1753667138937" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;ch02/src/main/webapp/Scripit.jsp&apos; to &apos;1_Scriptlet.jsp&apos;" description="Rename resource &apos;Scripit.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/Scripit.jsp" name="1_Scriptlet.jsp" stamp="1753667164464" updateReferences="true"/>
-</session>
