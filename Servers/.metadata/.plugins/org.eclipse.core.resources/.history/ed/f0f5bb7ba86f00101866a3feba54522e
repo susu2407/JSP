@@ -1,0 +1,46 @@
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.DriverManager"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+	//전송 데이터 수신
+	String seq = request.getParameter("seq"); // 수정할 행의 고유번호(기본키)
+	String name = request.getParameter("name");
+	String gender = request.getParameter("gender");
+	String age = request.getParameter("age");
+	String addr = request.getParameter("addr");
+	
+	// 데이터베이스 접속에 필요한 정보 제공(주소, 아이디, 비번)
+	String host = "jdbc:oracle:thin:@localhost:1521:xe"; 
+	String user = "tndus159200297";
+	String pass = "1234";
+	
+	try {
+		// 드바이버 등록(연결준비)
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		// 데이ㅓ베이스 접속(연결실행)
+		Connection conn = DriverManager.getConnection(host, user, pass);
+		
+		// SQL 실행 객체 생성 
+		String sql = "UPDATE USER6 SET NAME=?, GENDER=?, AGE=?, ADDR=? WHERE SEQ=?";
+		PreparedStatement psmt = conn.prepareStatement(sql);
+		psmt.setString(1, name);
+		psmt.setString(2, gender);
+		psmt.setString(3, age);
+		psmt.setString(4, addr);
+		psmt.setString(5, seq);
+		
+		// SQL 실행
+		psmt.executeUpdate();
+		
+		psmt.close();
+		conn.close();
+		
+	}catch(Exception e){
+		e.printStackTrace();
+	}
+	
+	response.sendRedirect("../list6.jsp");
+%>

@@ -1,0 +1,47 @@
+package vo;
+
+// DTO(Data Transfer Object) 객체 - 컴포넌트간 데이터 이동에 사용되는 객체 
+public class CustomerDTO {
+	
+	private String cid;
+	private String name;
+	private int type;
+	private String hp;
+	private String address;
+	public String getCid() {
+		return cid;
+	}
+	public void setCid(String cid) {
+		this.cid = cid;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getType() {
+		return type;
+	}
+	public void setType(int type) {
+		this.type = type;
+	}
+	public String getHp() {
+		return hp;
+	}
+	public void setHp(String hp) {
+		this.hp = hp;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	@Override
+	public String toString() {
+		return "CustomerDTO [cid=" + cid + ", name=" + name + ", type=" + type + ", hp=" + hp + ", address=" + address
+				+ "]";
+	}
+		
+}

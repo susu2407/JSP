@@ -4,15 +4,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Welcome</title>
-		<!-- 
-			날짜 : 2025/07/28
-			이름 : 이수연
-			내용 : 1장 JWP 개발환경 구축
-		 -->
 	</head>
 	<body>
 	
-		<h3>1장 JSP개요와 개발환경 구축</h3>
+		<h3>JSP개요와 개발환경 구축</h3>
 		<p>Welcome World!</p>
 		<p>Welcome JSP!</p>
 	
